@@ -1,0 +1,41 @@
+<!-- You can make changes to HTML templates by copying them to your theme directory in the appropriate place, and making the changes you need. Keep in mind that in the future if you upgrade the Open edX code, you may have to update the copied template in your theme also. -->
+
+## mako
+<%namespace name='static' file='static_content.html'/>
+<%!
+from django.core.urlresolvers import reverse
+from django.utils.translation import ugettext as _
+
+%>
+    <footer id="footer" class="midnight-blue">
+        <div class="containers">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-md-12">
+                      <img src="${static.url("images/logo-open-edx.png")}" alt=""/>
+                   
+                      &copy; 2017 <a target="_blank" href="http://vladimirandropov.github.io/portfolio/" title="">vvvvvvvvvv</a>. Some Rights Reserved.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-md-12">
+                      <ul class="pull-right">
+                          <li><a href="https://www.facebook.com/groups/ruedx/">Главная</a></li>
+                          <li><a href="https://www.facebook.com/groups/ruedx/">О нас</a></li>
+                          <li><a href="https://www.facebook.com/groups/ruedx/">Faq</a></li>
+                          <li><a href="https://www.facebook.com/groups/ruedx/">Контакты</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="social">
+                        <ul class="social-share">
+                            <li><a href="https://www.facebook.com/groups/CausariaLMS/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/vladandropov"><i class="fa fa-twitter"></i></a></li>                   
+                    <li><a href="skype:vova-yelets?call"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
